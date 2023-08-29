@@ -201,9 +201,7 @@ input::placeholder {
     height: 30px;
     padding: 4px 19px;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-    vertical-align: middle;
+    margin-right: 15px;
 }
 
 .filters:hover {
