@@ -392,8 +392,6 @@ input::placeholder {
 /****** Footer ******/
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: var(--main-bg-color);
 }
 
@@ -403,6 +401,15 @@ footer {
     padding: 20px;
     width: 100%;
     gap: 15px;
+}
+
+.about-title,
+.about-subtitle,
+.our-accomodations-title,
+.our-accomodations-subtitle,
+.help-title,
+.help-subtitle {
+    margin: 0px;
 }
 
 /*flex 
