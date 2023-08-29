@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    border: 1px dashed pink;
 }
 
 :root {
@@ -156,7 +157,7 @@ input {
 
 .txt {
     text-align: center;
-    font-weight: ;
+    font-weight: 700;
 }
 
 /****** Bouton rechercher******/
@@ -221,10 +222,14 @@ input::placeholder {
 
 .fa-info {
     display: flex;
-    width: 24px;
-    border: #d9d9d9;
-    border-radius: 50%;
+    justify-content: center;
+    border: #d9d9d9 solid 1px;
+    padding: 13px 12px 13px 12px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 14px;
 }
+
 
 /****** Hebergements And Populaires ***********/
 .accomodation-and-popular {
@@ -242,11 +247,19 @@ input::placeholder {
 /****** Hebergements ***********/
 .accomodation {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.accomodation-title {
+    margin: 0px;
+    padding: 0px;
 }
 
 .accomodation-cards-line-1 img,
 .accomodation-cards-line-2 img {
-    width: 33%;
+    width: 100%;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -256,11 +269,37 @@ input::placeholder {
 .accomodation-cards-line-2 {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+}
+
+.accomodation-cards-line-1 .card,
+.accomodation-cards-line-2 .card {
+    width: 30%;
+}
+
+
+.accomodation-cards-line-1 .card-content,
+.accomodation-cards-line-2 .card-content {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.accomodation a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
 .popular {
     width: 32%;
+}
+
+.popular-cards {
+    padding-top: 30px;
 }
 
 .popular-title,
@@ -270,22 +309,19 @@ input::placeholder {
     align-items: center;
 }
 
-.popular-cards .card
-.accomodation-cards .card {
+.popular-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-bottom: 30px;
 }
 
 .popular-cards img {
     width: 33%;
-    height: 124px;
+    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.popular-cards .card-content
-.accomodation-cards-line-1 .card-content,
-.accomodation-cards-line-2 .card-content {
+.popular-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
