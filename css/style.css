@@ -154,6 +154,7 @@ input {
 
 .txt {
     text-align: center;
+    font-weight: 700;
 }
 
 /****** Bouton rechercher******/
@@ -166,6 +167,7 @@ button {
     cursor: pointer;
     border : blue 1px;
     width: 10%;
+    font-weight: 700;
 }
 
 input::placeholder {
