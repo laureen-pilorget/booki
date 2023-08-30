@@ -292,6 +292,7 @@ input::placeholder {
 
 a {
     display: contents;
+    font-weight: 700;
 }
 /****** Populaires ***********/
 .popular {
