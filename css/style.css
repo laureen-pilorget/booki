@@ -287,12 +287,12 @@ input::placeholder {
 }
 
 .accomodation a {
-    text-decoration: none;
     color: black;
-    font-weight: bold;
-    width: 12%;
 }
 
+a {
+    display: contents;
+}
 /****** Populaires ***********/
 .popular {
     width: 32%;
