@@ -245,6 +245,32 @@ input::placeholder {
     box-sizing: border-box;
 }
 
+.popular-title,
+.accomodation-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-cards .card-title,
+.accomodation-cards-line-1 .card-title,
+.accomodation-cards-line-2 .card-title {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.popular-cards .card-subtitle,
+.accomodation-cards-line-1 .card-subtitle,
+.accomodation-cards-line-2 .card-subtitle {
+    margin: 0;
+}
+
+.popular-cards .card-rating,
+.accomodation-cards-line-1 .card-rating,
+.accomodation-cards-line-2 .card-rating {
+    margin-bottom: 5px;
+}
+
 /****** Hebergements ***********/
 .accomodation {
     width: 65%;
@@ -278,14 +304,11 @@ input::placeholder {
     width: 30%;
 }
 
-
 .accomodation-cards-line-1 .card-content,
 .accomodation-cards-line-2 .card-content {
-    width: 67%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .accomodation a {
@@ -299,6 +322,7 @@ a {
 .show-more {
     font-weight: 700;
 }
+
 /****** Populaires ***********/
 .popular {
     width: 32%;
@@ -306,18 +330,17 @@ a {
 
 .popular-cards {
     padding-top: 30px;
-}
-
-.popular-title,
-.accomodation-title {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-.popular-cards .card {
+.a{
     display: flex;
     margin-bottom: 30px;
+}
+
+.b {
+    display: flex;
 }
 
 .popular-cards img {
@@ -334,25 +357,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-}
-
-.popular-cards .card-title,
-.accomodation-cards-line-1 .card-title,
-.accomodation-cards-line-2 .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-
-.popular-cards .card-subtitle,
-.accomodation-cards-line-1 .card-subtitle,
-.accomodation-cards-line-2 .card-subtitle {
-    margin: 0;
-}
-
-.popular-cards .card-rating,
-.accomodation-cards-line-1 .card-rating,
-.accomodation-cards-line-2 .card-rating {
-    margin-bottom: 5px;
 }
 
 /****** Activités ******/
