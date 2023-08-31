@@ -65,7 +65,7 @@ header {
     height: 79px;
 }
 
-.logo {
+h1 {
     padding-top: 30px;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ nav li:hover {
 }
 
 /****** Texte ******/
-h1 {
+.find-accomodation {
     font-size: 22px;
     padding-bottom: 8px;
     margin-block: 0px;
@@ -179,6 +179,10 @@ input::placeholder {
     color: white;
 }
 
+.magnifying-glass {
+    display: none;
+}
+
 /****** Filtres ******/
 .filter {
     display: flex;
@@ -199,6 +203,11 @@ input::placeholder {
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-fire {
     padding-right: 10px;
+}
+
+.all-filters {
+    display: flex;
+    flex-direction: row;
 }
 
 .filters {
@@ -405,7 +414,8 @@ a {
 .activities-cards .card {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 23%;
+    padding: 0px;
 }
 
 .activities-cards img {
@@ -460,18 +470,53 @@ footer {
     font-weight: 400;
 }
 
-/*flex 
-enfants en column
-gap
-line height (en em)*/
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        justify-content: flex-start;
+    }
+    nav {
+        margin-left: 65%;
+    }
+
+    ul {
+        margin-top: 0px;
+    }
+
+    label {
+        width: 4%;
+    }
+
+    input {
+        width: 16%;
+    }
+
+    button {
+        width: 14.5%;
+    }
+
+    .magnifying-glass {
+        display: none;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-title{
+        display: flex;
+        align-self: start;
+    }
+
+    .all-filters {
+        align-self: flex-start;
+    }
+
     .accomodation-and-popular {
         flex-direction: column;
     }
@@ -502,8 +547,24 @@ line height (en em)*/
     .popular-cards .card-subtitle {
         font-size: 13px;
     }
-}
+    
+    .a {
+        margin-bottom: 0px;
+    }
+    
+    .activities-cards {
+        justify-content: center;
+    }
 
+    .activities-cards .card {
+        height: 270px;
+    }
+
+    .activities-cards img {
+        width: 100%;
+        height: 200px;
+    }
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
