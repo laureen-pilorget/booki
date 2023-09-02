@@ -31,40 +31,46 @@
             </nav>
         </header>
         <main>
-            <h2 class="find-accomodation">Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p class="text">En plein centre-ville ou en pleine nature</p>
-            <form method="get" action="#">
+            <div class="first-part">
+                <h2 class="find-accomodation">Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p class="text">En plein centre-ville ou en pleine nature</p>
+                <form method="get" action="#">
                     <label for="searchField">
                         <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     </label>
                     <input type="text" name="search" placeholder="Marseille, France" class="txt" id="searchField">
-                    <button type="submit">Rechercher</button>
+                    <button type="submit" class="search">Rechercher</button>
                     <button type="submit" class="magnifying-glass"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button> 
-            </form>
-            <div class="filter">
-                <h3 class="filter-title">Filtres</h3>
-                <div class="all-filters">
-                    <div class="filters">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <div class="filter-subtitle">Économique</div>
-                    </div>
-                    <div class="filters">
-                        <i class="fa-solid fa-child"></i>
-                        <div class="filter-subtitle">Familial</div>
-                    </div>
-                    <div class="filters">
-                        <i class="fa-solid fa-heart"></i>
-                        <div class="filter-subtitle">Romantique</div>
-                    </div>
-                    <div class="filters">
-                        <i class="fa-solid fa-fire"></i>
-                        <div class="filter-subtitle">Nos pépites</div>
+                </form>
+                <div class="filter">
+                    <h3 class="filter-title">Filtres</h3>
+                    <div class="all-filters">
+                        <div class="first-line">
+                            <div class="filters">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <div class="filter-subtitle">Économique</div>
+                            </div>
+                            <div class="filters">
+                                <i class="fa-solid fa-child"></i>
+                                <div class="filter-subtitle">Familial</div>
+                            </div>
+                        </div>
+                        <div class="second-line">
+                            <div class="filters second-line">
+                                <i class="fa-solid fa-heart"></i>
+                                <div class="filter-subtitle">Romantique</div>
+                            </div>
+                            <div class="filters second-line">
+                                <i class="fa-solid fa-fire"></i>
+                                <div class="filter-subtitle">Nos pépites</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="information">
-                <i class="fa-solid fa-info fa-xs" aria-hidden="true"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="information">
+                    <i class="fa-solid fa-info fa-xs" aria-hidden="true"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
             <div class="accomodation-and-popular">
                 <section class="accomodation" id="accomodation">
