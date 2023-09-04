@@ -108,6 +108,7 @@ nav p:hover {
 .text {
     margin-block: 0px;
     margin-inline: 0px;
+    font-size: 0.94em;
 }
 
 /****** Formulaire de recherche ******/
@@ -150,6 +151,7 @@ input {
 .txt {
     text-align: center;
     font-weight: 700;
+    font-size: 0.94em;
 }
 
 /****** Bouton rechercher******/
@@ -245,6 +247,7 @@ input::placeholder {
 
 .information p {
     margin: 0px;
+    font-size: 0.94em;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -478,7 +481,7 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        gap: 50%;
+        gap: 60%;
     }
 
     .menu {
@@ -495,7 +498,7 @@ footer {
     }
 
     input {
-        width: auto;
+        width: 15%;
     }
 
     button {
@@ -566,11 +569,26 @@ footer {
 
     .activities-cards .card {
         height: 270px;
-    }
+    }    
 
+    .activities-cards .card-title {
+        padding-right: 20px;
+    }
+    
     .activities-cards img {
         width: 100%;
-        height: 190px;
+        height: 200px;
+    }
+
+    .activities-cards .card-txt {
+        padding: 0px;
+        margin-left: 19px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
     }
 }
 
