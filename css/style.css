@@ -85,7 +85,7 @@ nav a {
 }
 
 nav p {
-    padding-top: 7px;
+    padding-top: 14px;
 }
 
 .nav {
@@ -239,7 +239,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     border: #d9d9d9 solid 1px;
-    padding: 13px 12px 13px 12px;
+    padding: 12px 10px 12px 10px;
     border-radius: 50px;
     margin-right: 10px;
     font-size: 0.9em;
@@ -614,14 +614,19 @@ footer {
 
     .menu {
         justify-content: center;
-        padding-bottom: 30px;
-        border-bottom: 2px #d9d9d9 solid;
     }
+
+    .nav {
+        margin: 0px;
+    }
+
     nav p {
         margin: 0px;
         width: 187.5px;
         display: flex;
         justify-content: center;
+        padding-bottom: 15px;
+        border-bottom: 2px #d9d9d9 solid;
     }
 
     nav p:hover {
@@ -639,19 +644,19 @@ footer {
     }
 
     .find-accomodation {
-        padding-top: 60px;
-        font-size: 1.3em;
+        padding-top: 45px;
+        font-size: 1.7em;
     }
     .text {
-        font-size: 0.9em;
+        font-size: 1.23em;
     }
 
     label {
-        width: 50px;
+        width: 45px;
     }
 
     input {
-        width: auto;
+        width: 55%;
     }
 
     .search {
@@ -662,6 +667,10 @@ footer {
         display: flex;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+    }
+
+    .fa-magnifying-glass {
+        align-self: center;
     }
 
     .filter {
@@ -683,7 +692,8 @@ footer {
     .filters {
         justify-content: center;
         margin-right: 10px;
-        width: 50%;
+        width: 160px;
+        padding: 0px;
     }
 
     .first-line,
@@ -694,12 +704,15 @@ footer {
 
     .accomodation-and-popular {
         flex-direction: column-reverse;
+        gap: 15px;
     }
     
     .accomodation-and-popular section {
         border-radius: 0px;
-        padding: 0px;
-        background-color: white;
+    }
+
+    .popular:nth-child(2) {
+        padding: 30px 20px;
     }
 
     .popular {
@@ -716,18 +729,16 @@ footer {
     .a {
         margin-bottom: 15px;
     }
-
-    .b {
-        margin-bottom: 30px;
-    }
-    .accomodation {
+    
+    .accomodation:nth-child(1) {
         width: 100%;
         display: block;
+        background-color: white;
+        padding: 20px;
     }
 
     .accomodation-title {
-        margin-top: 15px;
-        padding: 20px;
+        padding-bottom: 15px;
     }
 
     .accomodation-cards-line-1 {
