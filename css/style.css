@@ -72,6 +72,7 @@ h1 {
     justify-content: center;
     height: 19px;
     margin: 0px;
+    max-width: 70px;
 }
 
 
@@ -284,49 +285,42 @@ input::placeholder {
     font-size: 1.4em;
 }
 
-.accomodation-cards-line-1 img,
-.accomodation-cards-line-2 img {
+.accomodation-cards img {
     width: 100%;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.accomodation-cards-line-1,
-.accomodation-cards-line-2 {
+.accomodation-cards{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.accomodation-cards-line-1 .card,
-.accomodation-cards-line-2 .card {
-    width: 30%;
+.accomodation-cards .card {
+    width: 29.5%;
 }
 
-.accomodation-cards-line-1 .card-content,
-.accomodation-cards-line-2 .card-content {
+.accomodation-cards .card-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
 
-.accomodation-cards-line-1 .card-title,
-.accomodation-cards-line-2 .card-title {
+.accomodation-cards .card-title {
     margin-top: 4px;
     margin-bottom: 8px;
 }
 
-.accomodation-cards-line-1 .card-subtitle,
-.accomodation-cards-line-2 .card-subtitle {
+.accomodation-cards .card-subtitle {
     margin-top: 0px;
     margin-bottom: 8px;
     font-size: 0.9em;
 }
 
-.accomodation-cards-line-1 .card-rating,
-.accomodation-cards-line-2 .card-rating {
+.accomodation-cards .card-rating {
     margin-bottom: 10px;
 }
 
@@ -606,6 +600,7 @@ footer {
     h1 {
         margin: 0px;
         padding: 30px;
+        max-width: none;
     }
 
     h1 img {
@@ -615,14 +610,15 @@ footer {
     .menu {
         justify-content: center;
     }
-
+    
     .nav {
         margin: 0px;
+        width: 100%;
     }
 
     nav p {
         margin: 0px;
-        width: 187.5px;
+        width: 100%;
         display: flex;
         justify-content: center;
         padding-bottom: 15px;
@@ -667,6 +663,7 @@ footer {
         display: flex;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        margin-left: -10px;
     }
 
     .fa-magnifying-glass {
@@ -675,12 +672,12 @@ footer {
 
     .filter {
         flex-direction: column;
-        align-items: normal;
     }
 
     .filter-title {
         margin: 0px;
         padding-bottom: 20px;
+        align-self: start;
     }
 
     .all-filters {
@@ -700,6 +697,10 @@ footer {
     .second-line {
         display: flex;
         white-space: nowrap;
+    }
+
+    .information p {
+        font-size: 1.23em;
     }
 
     .accomodation-and-popular {
@@ -741,23 +742,51 @@ footer {
         padding-bottom: 15px;
     }
 
-    .accomodation-cards-line-1 {
+    .accomodation-cards line-1 {
         padding-bottom: 15px;
     }
 
-    .accomodation-cards-line-1,
-    .accomodation-cards-line-2 {
+    .accomodation-cards {
         flex-direction: column;
         gap: 15px;
     }
 
-    .accomodation-cards-line-1 .card,
-    .accomodation-cards-line-2 .card {
-        width: 100%;
+    .accomodation-cards .card {
+        width: 97.5%;
+    }
+
+    .show-more {
+        padding-top: 15px;
+        font-size: 1.07em;
     }
 
     .activities-cards {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 6;
+    }
+
+    .three {
+        order: 3;
+    }
+
+    .four {
+        order: 4;
+    }
+
+    .five {
+        order: 2;
+    }
+
+    .six {
+        order: 5;
     }
 
     .activities-cards .card {
